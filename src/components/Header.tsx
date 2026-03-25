@@ -4,9 +4,9 @@ import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-2 py-1 md:px-6 md:py-1 bg-charcoal/[.97] backdrop-blur-[10px] border-b-2 border-accent">
+    <nav className="fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-2 py-0 md:px-6 md:py-0 bg-charcoal/[.97] backdrop-blur-[10px] border-b-2 border-accent">
       <Link to="/">
-        <img src={logo} alt="New England Pavers & Stone" className="h-32 md:h-40 w-auto" />
+        <img src={logo} alt="New England Pavers & Stone" className="h-64 md:h-80 w-auto" />
       </Link>
       <div className="flex items-stretch gap-0">
         <div className="relative group flex items-center">
