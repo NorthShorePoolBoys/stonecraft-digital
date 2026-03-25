@@ -28,6 +28,15 @@ export interface ServiceData {
   relatedSlugs: string[];
   serviceAreaText: string;
   includedDetails: ServiceFeature[];
+  layout?: "default" | "visual" | "technical" | "compact";
+  heroStyle?: "standard" | "split-image" | "stats-bar" | "video-bg";
+  heroImage?: string;
+  heroStats?: { label: string; value: string }[];
+  heroVideo?: string;
+  sections?: string[];
+  beforeAfterImages?: { before: string; after: string; caption: string }[];
+  materialComparison?: { name: string; pros: string; cons: string; best_for: string }[];
+  testimonialQuote?: { text: string; author: string; location: string };
 }
 
 export const services: ServiceData[] = [
