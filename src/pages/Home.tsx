@@ -68,6 +68,28 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Review Badges */}
+      <section className="grid grid-cols-2 md:grid-cols-4 bg-charcoal relative z-10">
+        {[
+          { name: "YELP", url: "https://www.yelp.com/biz/new-england-pavers-and-stone-lynn" },
+          { name: "GOOGLE", url: "https://www.google.com/maps/place/New+England+pavers%26stone/@42.5030971,-71.0721762,17z/data=!4m8!3m7!1s0x80c8155df5ef72a7:0xc12f6d9f1828a097!8m2!3d42.5030932!4d-71.0696013!9m1!1b1!16s%2Fg%2F11xysx2x3c?hl=en&entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D" },
+          { name: "ANGI", url: "https://www.angi.com/companylist/us/ma/lynn/new-england-pavers-and-stone-llc-reviews-1.htm" },
+          { name: "YAHOO", url: "https://local.yahoo.com/info-238197620-new-england-pavers-stone-lynn/" },
+        ].map((platform) => (
+          <a
+            key={platform.name}
+            href={platform.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center justify-center py-6 px-4 border-r border-white/[.06] last:border-r-0 hover:bg-mid transition-colors group"
+          >
+            <span className="font-display text-lg tracking-[2px] text-white group-hover:text-accent transition-colors">{platform.name}</span>
+            <span className="text-accent text-base tracking-[1px] my-1">★★★★★</span>
+            <span className="text-xs tracking-[2px] text-off">5.0 RATING</span>
+          </a>
+        ))}
+      </section>
+
       <Stripe />
 
       {/* Stats */}
