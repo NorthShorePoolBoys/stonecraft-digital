@@ -41,8 +41,17 @@ const Home = () => {
       />
 
       {/* Hero */}
-      <section className="pt-[120px] pb-16 px-5 md:pt-[160px] md:pb-20 md:px-12 min-h-screen flex flex-col justify-center">
-        <div className="font-display text-sm tracking-[6px] text-accent mb-4 animate-slide-up">MASONRY · HARDSCAPE · STONEWORK</div>
+      <section className="relative overflow-hidden pt-[120px] pb-16 px-5 md:pt-[160px] md:pb-20 md:px-12 min-h-screen flex flex-col justify-center">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="/videos/hero-bg.mp4"
+        />
+        <div className="absolute inset-0 bg-black/60 z-[1]" />
+        <div className="font-display text-sm tracking-[6px] text-accent mb-4 animate-slide-up relative z-10">MASONRY · HARDSCAPE · STONEWORK</div>
         <h1 className="font-display text-[clamp(40px,9vw,140px)] text-white leading-[0.9] tracking-[1px] mb-5 animate-slide-up delay-1">
           MASONRY &amp;<br />HARDSCAPE<br />
           <span className="text-accent">CONTRACTOR</span><br />
