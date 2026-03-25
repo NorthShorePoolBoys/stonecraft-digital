@@ -52,15 +52,15 @@ const Home = () => {
         />
         <div className="absolute inset-0 bg-black/60 z-[1]" />
         <div className="font-display text-sm tracking-[6px] text-accent mb-4 animate-slide-up relative z-10">MASONRY · HARDSCAPE · STONEWORK</div>
-        <h1 className="font-display text-[clamp(40px,9vw,140px)] text-white leading-[0.9] tracking-[1px] mb-5 animate-slide-up delay-1">
+        <h1 className="relative z-10 font-display text-[clamp(40px,9vw,140px)] text-white leading-[0.9] tracking-[1px] mb-5 animate-slide-up delay-1">
           MASONRY &amp;<br />HARDSCAPE<br />
           <span className="text-accent">CONTRACTOR</span><br />
           <span className="text-transparent" style={{ WebkitTextStroke: "2px hsl(var(--concrete))", fontSize: "clamp(20px,4vw,60px)" }}>IN WAKEFIELD, MA</span>
         </h1>
-        <p className="max-w-[520px] text-[17px] leading-relaxed text-off font-light animate-slide-up delay-2">
+        <p className="relative z-10 max-w-[520px] text-[17px] leading-relaxed text-off font-light animate-slide-up delay-2">
           Patios. Walls. Walkways. Driveways. Built by hand with precision and care for New England homeowners who demand the best.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-start mt-7 animate-slide-up delay-3">
+        <div className="relative z-10 flex flex-col sm:flex-row gap-4 items-start mt-7 animate-slide-up delay-3">
           <a href="tel:6176973456" className="font-display text-[28px] text-accent no-underline tracking-[2px] hover:text-accent-hover transition-colors">(617) 697-3456</a>
           <Link to="/contact" className="px-[22px] py-2.5 bg-accent text-white no-underline text-xs tracking-[1.5px] uppercase font-semibold hover:bg-accent-hover hover:-translate-y-px hover:shadow-[0_8px_24px_rgba(212,71,42,.3)] transition-all">
             Get Free Estimate →
