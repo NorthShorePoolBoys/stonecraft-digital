@@ -72,7 +72,7 @@ const Home = () => {
       <section className="grid grid-cols-2 md:grid-cols-4 bg-charcoal relative z-10">
         {[
           { name: "YELP", url: "https://www.yelp.com/biz/new-england-pavers-and-stone-lynn" },
-          { name: "GOOGLE", url: "https://www.google.com/maps/place/New+England+pavers%26stone/@42.5030971,-71.0721762,17z/data=!4m8!3m7!1s0x80c8155df5ef72a7:0xc12f6d9f1828a097!8m2!3d42.5030932!4d-71.0696013!9m1!1b1!16s%2Fg%2F11xysx2x3c?hl=en&entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D" },
+          { name: "GOOGLE", url: "https://share.google/5uIujXMLthk0A2OLb" },
           { name: "ANGI", url: "https://www.angi.com/companylist/us/ma/lynn/new-england-pavers-and-stone-llc-reviews-1.htm" },
           { name: "YAHOO", url: "https://local.yahoo.com/info-238197620-new-england-pavers-stone-lynn/" },
         ].map((platform) => (
