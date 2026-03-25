@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
 import { services } from "@/data/services";
-import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const firstHalf = services.slice(0, 9);
   const secondHalf = services.slice(9);
 
   return (
-    <footer className="px-3 py-4 md:px-6 md:py-6 border-t-2 border-mid">
+    <footer className="px-5 py-8 md:px-12 md:py-12 border-t-2 border-mid">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:gap-10 mb-10">
         <div>
-          <div className="mb-3">
-            <img src={logo} alt="New England Pavers & Stone" className="w-[1000px] max-w-full h-auto mb-2" />
-            <span className="block font-body text-[10px] tracking-[3px] text-off font-normal uppercase">Masonry · Hardscape · Stonework</span>
+          <div className="font-display text-xl text-white tracking-[2px] mb-3">
+            NEW ENGLAND PAVERS &amp; STONE
+            <small className="block font-body text-[10px] tracking-[3px] text-off font-normal uppercase mt-1">Masonry · Hardscape · Stonework</small>
           </div>
           <div className="text-[13px] text-off leading-relaxed mt-3">
             Licensed and insured masonry and hardscape contractor serving Wakefield, the North Shore, MetroWest, and Greater Boston since 2008. We never subcontract — our crew builds every project.
