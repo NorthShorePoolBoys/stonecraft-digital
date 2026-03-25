@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { services } from "@/data/services";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-5 py-3 md:px-12 md:py-4 bg-charcoal/[.97] backdrop-blur-[10px] border-b-2 border-accent">
-      <Link to="/" className="font-display text-[22px] text-white tracking-[2px] leading-none no-underline">
-        NEW ENGLAND<br />PAVERS &amp; STONE
-        <small className="block font-body text-[9px] tracking-[4px] text-off font-normal uppercase">Wakefield, Massachusetts</small>
+      <Link to="/">
+        <img src={logo} alt="New England Pavers & Stone" className="h-10 md:h-12 w-auto" />
       </Link>
       <div className="flex items-stretch gap-0">
         <div className="relative group flex items-center">
