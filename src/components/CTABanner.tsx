@@ -9,7 +9,7 @@ const CTABanner = ({ headline = "READY TO BUILD?" }: CTABannerProps) => {
     <>
       <div className="h-1.5 w-full" style={{ background: "repeating-linear-gradient(135deg, hsl(var(--accent)) 0, hsl(var(--accent)) 12px, transparent 12px, transparent 24px)" }} />
       <section className="px-5 py-16 md:px-12 md:py-20 text-center relative overflow-hidden">
-        <img src="/images/cta-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover z-0" loading="lazy" />
+        <img src="/images/cta-bg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover z-0" fetchPriority="high" />
         <div className="absolute inset-0 bg-black/40 z-[1]" />
         <h2 className="font-display text-[clamp(32px,5vw,64px)] text-white tracking-[3px] mb-3 relative z-10">{headline}</h2>
         <p className="text-white/70 text-[15px] mb-7 relative z-10">Free estimates · No pressure · Serving Greater Boston &amp; the North Shore</p>
