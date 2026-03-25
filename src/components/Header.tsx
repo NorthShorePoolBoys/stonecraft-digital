@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-5 py-3 md:px-12 md:py-4 bg-charcoal/[.97] backdrop-blur-[10px] border-b-2 border-accent">
       <Link to="/">
-        <img src={logo} alt="New England Pavers & Stone" className="h-10 md:h-12 w-auto" />
+        <img src={logo} alt="New England Pavers & Stone" className="h-20 md:h-24 w-auto" />
       </Link>
       <div className="flex items-stretch gap-0">
         <div className="relative group flex items-center">
