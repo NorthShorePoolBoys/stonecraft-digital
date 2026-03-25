@@ -90,6 +90,12 @@ export const services: ServiceData[] = [
     whyChooseUs: "When you hire New England Pavers & Stone for your paver patio, the owner is on your jobsite every day. We do not subcontract any phase of the work — our trained crew handles excavation, base prep, paver installation, and finishing. That means one company is accountable for every layer of your patio, from the geotextile fabric 14 inches below the surface to the polymeric sand you walk on. Our base preparation is engineered specifically for Massachusetts freeze-thaw conditions. While some contractors install 6 inches of base and call it done, we install a minimum of 12 inches of compacted processed gravel in 4-inch lifts. That additional depth is the difference between a patio that lasts 5 years and one that lasts 25. We are authorized installers for Belgard and Unilock, which means your paver warranty is backed by both the manufacturer and our workmanship guarantee.",
     relatedSlugs: ["outdoor-living", "fire-pits", "walkways", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone installs paver patios for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, Malden, Peabody, Danvers, North Reading, Wilmington, Cambridge, Somerville, and communities across Greater Boston. Contact us at (617) 697-3456 for a free on-site patio estimate.",
+    layout: "visual",
+    heroStyle: "split-image",
+    heroImage: "/images/services/paver-patios-hero.jpg",
+    sections: ["hero", "intro", "features", "beforeAfter", "included", "benefits", "process", "testimonial", "whyUs", "faq", "related", "serviceArea"],
+    beforeAfterImages: [{ before: "/images/services/patio-before-1.jpg", after: "/images/services/patio-after-1.jpg", caption: "Complete paver patio installation — Melrose, MA. Belgard Urbana pavers with soldier course border." }, { before: "/images/services/patio-before-2.jpg", after: "/images/services/patio-after-2.jpg", caption: "Backyard transformation — Reading, MA. Multi-level patio with built-in seating wall and fire pit pad." }],
+    testimonialQuote: { text: "They transformed our backyard into something we use every single day. The patio is level, the drainage works, and the whole crew was professional from start to finish. Best money we ever spent on this house.", author: "Mike R.", location: "Wakefield, MA" },
   },
   {
     slug: "hardscape",
@@ -138,6 +144,10 @@ export const services: ServiceData[] = [
     whyChooseUs: "New England Pavers & Stone is a single-source hardscape contractor. That means one company — our company — handles the design, excavation, base preparation, wall construction, surface installation, drainage, and finishing of your entire outdoor project. The owner is on site every day, and our in-house crew does every bit of the work. No subcontractors. No day laborers from a parking lot. When something needs attention, you call one number and talk to the person who built it. We have been building hardscapes in Wakefield and across Greater Boston since 2008, and our reputation was built on referrals from homeowners who appreciated that level of accountability.",
     relatedSlugs: ["paver-patios", "retaining-walls", "walkways", "outdoor-living"],
     serviceAreaText: "New England Pavers & Stone provides full-service hardscape design and construction for homeowners in Wakefield, Melrose, Reading, Stoneham, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, Saugus, Lynnfield, Peabody, and communities across Greater Boston. Call (617) 697-3456 for your free consultation.",
+    layout: "technical",
+    heroStyle: "stats-bar",
+    heroStats: [{ label: "Projects", value: "500+" }, { label: "Since", value: "2008" }, { label: "Google Rating", value: "5.0★" }, { label: "Subcontracted", value: "0%" }],
+    sections: ["hero", "intro", "process", "features", "included", "benefits", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "chimney",
@@ -185,6 +195,9 @@ export const services: ServiceData[] = [
     whyChooseUs: "Chimney work requires experienced masons who understand both the structural and waterproofing aspects of the job. At New England Pavers & Stone, our crew has been repairing and rebuilding chimneys across Wakefield and Greater Boston for 17 years. We know how to match existing brick, profile mortar joints, and integrate flashing with your roofing system so the repair lasts. We do not subcontract chimney work to roofers or handymen. Our masons handle every aspect of the masonry, and we coordinate directly with your roofer if flashing integration requires their involvement.",
     relatedSlugs: ["stone-veneer", "brick", "repair"],
     serviceAreaText: "New England Pavers & Stone provides chimney repair and rebuild services for homeowners in Wakefield, Melrose, Stoneham, Reading, Winchester, Woburn, Medford, Malden, Arlington, Lexington, Saugus, Lynnfield, Peabody, Burlington, and communities across Greater Boston. Call (617) 697-3456 for a free chimney inspection.",
+    layout: "default",
+    testimonialQuote: { text: "Our chimney was crumbling and two other contractors wanted to do a quick patch job. These guys were honest — told us exactly what needed rebuilding and what could be repointed. The finished chimney looks better than new.", author: "David M.", location: "Stoneham, MA" },
+    sections: ["hero", "intro", "features", "included", "benefits", "testimonial", "process", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "asphalt",
@@ -232,6 +245,15 @@ export const services: ServiceData[] = [
     whyChooseUs: "We approach asphalt paving with the same attention to base preparation that we bring to our paver installations. Most asphalt failures are base failures, and we refuse to pave over a bad base just to save time. Our crew compacts gravel in lifts, grades for drainage, and applies asphalt in two courses for maximum density and durability. We are upfront about asphalt's limitations compared to pavers — and we will tell you if pavers are the smarter long-term investment for your specific situation.",
     relatedSlugs: ["driveways", "sod-grass", "french-drain"],
     serviceAreaText: "New England Pavers & Stone provides asphalt paving services for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Woburn, Winchester, Burlington, Medford, Malden, and communities across Greater Boston. Call (617) 697-3456 for a free estimate.",
+    layout: "technical",
+    heroStyle: "stats-bar",
+    heroStats: [{ label: "Driveways Paved", value: "200+" }, { label: "Years Experience", value: "17" }, { label: "Hot-Mix Lifts", value: "2-Lift" }, { label: "Base Depth", value: "12\"+" }],
+    sections: ["hero", "intro", "process", "features", "included", "materials", "benefits", "whyUs", "faq", "related", "serviceArea"],
+    materialComparison: [
+      { name: "Hot-Mix Asphalt", pros: "Most durable, proper compaction, longest lifespan", cons: "Requires professional equipment, weather-dependent installation", best_for: "New driveway installations and full-depth replacements" },
+      { name: "Cold Patch", pros: "DIY-friendly, quick fix, available at hardware stores", cons: "Temporary solution, poor adhesion, breaks down quickly", best_for: "Emergency pothole repairs until proper repair can be scheduled" },
+      { name: "Sealcoat", pros: "Extends asphalt life 3-5 years per application, restores appearance", cons: "Does not fix structural damage, needs reapplication every 2-3 years", best_for: "Maintenance on structurally sound asphalt surfaces" }
+    ],
   },
   {
     slug: "landscape",
@@ -279,6 +301,8 @@ export const services: ServiceData[] = [
     whyChooseUs: "Most hardscape contractors finish the patio and leave you to figure out the rest of the yard. We finish the entire project — grading, planting, sod, mulch, and drainage — so you are not left with a beautiful patio surrounded by a torn-up yard. Our landscape work is designed specifically to complement the hardscape we build. Planting beds are graded to drain away from walls and patio surfaces. Species are selected for appropriate scale and root behavior near hardscape edges. The result is an outdoor space that looks intentional and works as a unified system.",
     relatedSlugs: ["sod-grass", "french-drain", "paver-patios", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone provides landscape services for homeowners in Wakefield, Melrose, Stoneham, Reading, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, and communities across Greater Boston. Call (617) 697-3456 for a free consultation.",
+    layout: "compact",
+    sections: ["hero", "intro", "features", "process", "faq", "related", "serviceArea"],
   },
   {
     slug: "brick",
@@ -326,6 +350,9 @@ export const services: ServiceData[] = [
     whyChooseUs: "Brick masonry is a craft that demands patience, precision, and experience. Our masons have been laying brick across Greater Boston for 17 years. We understand how to prepare proper foundations for New England's freeze-thaw climate, how to match mortar on 100-year-old homes, and how to execute intricate patterns that lesser crews avoid. When you hire us for brick work, you get masons — not laborers with a trowel.",
     relatedSlugs: ["chimney", "stone-veneer", "repair", "walkways"],
     serviceAreaText: "New England Pavers & Stone provides brick masonry services for homeowners in Wakefield, Melrose, Stoneham, Reading, Winchester, Woburn, Medford, Malden, Arlington, Lexington, Cambridge, Somerville, and communities across Greater Boston. Call (617) 697-3456 for a free estimate.",
+    layout: "default",
+    testimonialQuote: { text: "They matched our 1920s brick perfectly — you cannot tell where the old work ends and the new begins. The repointing looks like it has been there forever. Real craftsmen.", author: "Carol S.", location: "Melrose, MA" },
+    sections: ["hero", "intro", "features", "included", "benefits", "testimonial", "process", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "french-drain",
@@ -373,6 +400,15 @@ export const services: ServiceData[] = [
     whyChooseUs: "Most contractors treat drainage as an afterthought. We treat it as a fundamental part of every hardscape project because we have seen what happens when it is ignored. Our crew installs French drains as part of patio, wall, and walkway projects every week. We understand subsurface water behavior in the clay-heavy soils common across Wakefield, Melrose, Stoneham, and the North Shore. When we design a drainage system, we solve the root cause — not just the visible symptom.",
     relatedSlugs: ["retaining-walls", "landscape", "paver-patios", "sod-grass"],
     serviceAreaText: "New England Pavers & Stone installs French drains and drainage systems for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Medford, Malden, and communities across Greater Boston. Call (617) 697-3456 for a free drainage evaluation.",
+    layout: "technical",
+    heroStyle: "stats-bar",
+    heroStats: [{ label: "Projects Completed", value: "500+" }, { label: "Years Experience", value: "17" }, { label: "Drainage Solutions", value: "100%" }, { label: "Warranty", value: "Multi-Year" }],
+    sections: ["hero", "intro", "process", "features", "materials", "included", "benefits", "whyUs", "faq", "related", "serviceArea"],
+    materialComparison: [
+      { name: "Interior French Drain", pros: "Solves basement water intrusion, connects to sump pump, hidden installation", cons: "Requires interior excavation, disrupts basement during install", best_for: "Wet basements with water seeping through foundation walls or floor" },
+      { name: "Exterior French Drain", pros: "Intercepts water before it reaches foundation, no interior disruption", cons: "Requires excavation around foundation, more expensive, landscape disruption", best_for: "Properties with surface water flowing toward foundation" },
+      { name: "Curtain Drain", pros: "Intercepts subsurface water flow on slopes, protects entire areas", cons: "Requires trenching across property, needs proper outlet", best_for: "Sloped properties where groundwater flows toward structures or hardscape" }
+    ],
   },
   {
     slug: "fence",
@@ -420,6 +456,8 @@ export const services: ServiceData[] = [
     whyChooseUs: "We set fence posts the right way — in concrete, below the frost line, every single time. This takes more time and more material than the shallow-set approach some fence companies use, but it is the only way to build a fence that stays straight through Massachusetts winters. We also handle the details that other installers skip: permit research, Dig Safe coordination, property line verification, and code-compliant gate hardware. These details prevent the disputes, violations, and failures that turn a fence project into a headache.",
     relatedSlugs: ["landscape", "sod-grass", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone installs residential fencing for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Medford, and communities across Greater Boston. Call (617) 697-3456 for a free fence estimate.",
+    layout: "compact",
+    sections: ["hero", "intro", "features", "process", "faq", "related", "serviceArea"],
   },
   {
     slug: "sod-grass",
@@ -467,6 +505,8 @@ export const services: ServiceData[] = [
     whyChooseUs: "We install sod as the final step of a complete project — not as a standalone service disconnected from the hardscape work. That means the grading is right, the drainage is designed to work with your patio and walls, and the lawn areas are restored to the same standard we apply to the hardscape itself. Our crew handles sod installation with the same precision we bring to paver work. Seams are tight. Edges are clean. The grading drains where it should. When we leave, your entire yard is finished.",
     relatedSlugs: ["landscape", "paver-patios", "french-drain"],
     serviceAreaText: "New England Pavers & Stone provides sod installation and lawn restoration for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, and communities across Greater Boston. Call (617) 697-3456 for a free estimate.",
+    layout: "compact",
+    sections: ["hero", "intro", "features", "process", "faq", "related", "serviceArea"],
   },
   {
     slug: "walkways",
@@ -515,6 +555,8 @@ export const services: ServiceData[] = [
     whyChooseUs: "We build walkways the same way we build patios — on a 12-inch compacted gravel base that prevents frost heave. Many walkway contractors skip proper base preparation because the walkway is narrow and they assume settling will be minimal. After one New England winter, those walkways show cracks, lips, and heaved sections that create trip hazards. Our walkways do not, because we do not cut corners on the work you cannot see.",
     relatedSlugs: ["paver-patios", "steps-stairs", "landscape", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone installs custom walkways for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, Malden, and communities across Greater Boston. Call (617) 697-3456 for a free walkway estimate.",
+    layout: "compact",
+    sections: ["hero", "intro", "features", "process", "faq", "related", "serviceArea"],
   },
   {
     slug: "retaining-walls",
@@ -564,6 +606,15 @@ export const services: ServiceData[] = [
     whyChooseUs: "We have built retaining walls across Wakefield and Greater Boston for 17 years, and we have also repaired dozens of walls built by contractors who skipped the drainage. Every wall we build includes a full drainage system — stone backfill, perforated pipe, filter fabric, and a daylight outlet. This is not optional and it is not an add-on. It is included because a wall without drainage is a wall that will fail. We install geogrid reinforcement at engineered intervals, bury the first course below grade, and compact the foundation to proper density. The result is a wall that performs structurally for decades, not just years.",
     relatedSlugs: ["paver-patios", "steps-stairs", "french-drain", "landscape"],
     serviceAreaText: "New England Pavers & Stone builds retaining walls for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, Malden, Peabody, and communities across Greater Boston. Call (617) 697-3456 for a free retaining wall consultation.",
+    layout: "technical",
+    heroStyle: "stats-bar",
+    heroStats: [{ label: "Walls Built", value: "300+" }, { label: "Years in Business", value: "17" }, { label: "Geogrid Reinforced", value: "100%" }, { label: "Subcontractors", value: "Zero" }],
+    sections: ["hero", "intro", "process", "features", "materials", "included", "benefits", "whyUs", "faq", "related", "serviceArea"],
+    materialComparison: [
+      { name: "Segmental Block", pros: "Engineered for structural loads, many styles, integrates with geogrid", cons: "Manufactured appearance, limited natural look", best_for: "Walls over 3 feet that need structural reinforcement" },
+      { name: "Natural Stone", pros: "Authentic New England look, unique character, timeless", cons: "More labor-intensive, limited engineering data, higher cost", best_for: "Decorative walls under 4 feet where appearance is priority" },
+      { name: "Boulder Walls", pros: "Natural, dramatic appearance, fewer joints, fast installation", cons: "Requires heavy equipment, limited height, less precise", best_for: "Informal settings, naturalized landscapes, erosion control" }
+    ],
   },
   {
     slug: "driveways",
@@ -611,6 +662,16 @@ export const services: ServiceData[] = [
     whyChooseUs: "Driveway installation demands a deeper base, heavier pavers, and stronger edge restraints than patio work. Our crew understands these differences and builds driveway bases to vehicular load standards — not patio standards. We install 80mm pavers rated at 8,000+ PSI compressive strength, not the 60mm patio pavers that some contractors use on driveways to save on material costs. Those undersized pavers crack under vehicle weight within a few years. We also design driveway aprons to handle the concentrated forces at your street entry, where most driveway failures begin.",
     relatedSlugs: ["asphalt", "paver-patios", "walkways"],
     serviceAreaText: "New England Pavers & Stone installs paver driveways for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, and communities across Greater Boston. Call (617) 697-3456 for a free driveway estimate.",
+    layout: "visual",
+    heroStyle: "split-image",
+    heroImage: "/images/services/driveways-hero.jpg",
+    sections: ["hero", "intro", "features", "beforeAfter", "included", "materials", "benefits", "process", "whyUs", "faq", "related", "serviceArea"],
+    beforeAfterImages: [{ before: "/images/services/driveway-before-1.jpg", after: "/images/services/driveway-after-1.jpg", caption: "Paver driveway replacement — Winchester, MA. Unilock Beacon Hill Flagstone with heated apron." }],
+    materialComparison: [
+      { name: "Concrete Pavers", pros: "Durable, many colors/patterns, individual replacement, no cracking", cons: "Higher upfront cost than asphalt, requires polymeric sand maintenance", best_for: "Homeowners wanting long-term value and curb appeal" },
+      { name: "Natural Stone", pros: "Unique appearance, extremely durable, premium look", cons: "Highest cost, limited patterns, requires skilled installation", best_for: "High-end properties where appearance is the priority" },
+      { name: "Asphalt", pros: "Lowest upfront cost, quick installation, easy to repair", cons: "Shorter lifespan, requires sealcoating every 2-3 years, cracks in cold", best_for: "Budget-conscious projects or long driveways where cost per foot matters" }
+    ],
   },
   {
     slug: "outdoor-living",
@@ -658,6 +719,12 @@ export const services: ServiceData[] = [
     whyChooseUs: "An outdoor living project involves more trades and coordination than any other hardscape job. You need masonry, gas plumbing, electrical, possibly water supply, and sometimes structural carpentry for pergolas. Most hardscape contractors are not equipped to manage that coordination. We are. Our crew handles all masonry and hardscape work in-house. We coordinate directly with licensed plumbers, electricians, and gas fitters we have worked with for years. The owner manages the project timeline and ensures every trade integrates cleanly with our work. The result is a seamless outdoor space, not a collection of disconnected pieces built by different contractors on different schedules.",
     relatedSlugs: ["paver-patios", "fire-pits", "stone-veneer", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone builds outdoor living spaces for homeowners in Wakefield, Melrose, Reading, Stoneham, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, Lynnfield, Saugus, and communities across Greater Boston. Call (617) 697-3456 for a free design consultation.",
+    layout: "visual",
+    heroStyle: "split-image",
+    heroImage: "/images/services/outdoor-living-hero.jpg",
+    sections: ["hero", "intro", "features", "beforeAfter", "included", "benefits", "process", "testimonial", "whyUs", "faq", "related", "serviceArea"],
+    beforeAfterImages: [{ before: "/images/services/outdoor-living-before-1.jpg", after: "/images/services/outdoor-living-after-1.jpg", caption: "Full outdoor living space — Lexington, MA. Kitchen, bar, fire pit, and patio in one unified project." }],
+    testimonialQuote: { text: "We basically added a second living room outside. The outdoor kitchen gets used more than our indoor one from May through October. Their design integrated everything perfectly.", author: "Sarah & Tom L.", location: "Lexington, MA" },
   },
   {
     slug: "steps-stairs",
@@ -705,6 +772,9 @@ export const services: ServiceData[] = [
     whyChooseUs: "Steps are deceptively simple-looking but technically demanding. Uneven risers cause falls. Shallow foundations cause heaving. Undersized landings violate code. Our masons have built hundreds of stairways and understand the engineering, code requirements, and material properties that make the difference between steps that are safe and steps that are hazardous. We build every stairway on a foundation that extends below the frost line, with uniform risers, proper landings, and provisions for handrails where required. The result is a stairway that is safe, code-compliant, and built to last decades.",
     relatedSlugs: ["walkways", "retaining-walls", "paver-patios"],
     serviceAreaText: "New England Pavers & Stone builds custom steps and staircases for homeowners in Wakefield, Melrose, Stoneham, Reading, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, and communities across Greater Boston. Call (617) 697-3456 for a free step estimate.",
+    layout: "default",
+    testimonialQuote: { text: "Our front steps were a safety hazard — shifting treads and crumbling mortar. The new granite steps they built are absolutely solid. Should have done this years ago.", author: "Robert P.", location: "Saugus, MA" },
+    sections: ["hero", "intro", "features", "included", "benefits", "testimonial", "process", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "fire-pits",
@@ -752,6 +822,9 @@ export const services: ServiceData[] = [
     whyChooseUs: "We build fire features as integrated elements of your outdoor living space — not afterthoughts dropped onto an existing patio. When you hire us, the fire pit foundation is planned into the patio base. The seating walls are designed at the right height and distance for comfortable warming. Gas lines are routed during excavation. The result is a fire feature that looks and functions like it was always part of the plan, because it was. We also handle the permit and gas coordination that most hardscape-only contractors leave for you to figure out.",
     relatedSlugs: ["paver-patios", "outdoor-living", "stone-veneer", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone installs fire pits and outdoor fireplaces for homeowners in Wakefield, Melrose, Reading, Stoneham, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, Lynnfield, Saugus, and communities across Greater Boston. Call (617) 697-3456 for a free fire feature consultation.",
+    layout: "default",
+    testimonialQuote: { text: "We use the fire pit from April through Thanksgiving now. The built-in seating wall and lighting they added makes it feel like an outdoor room, not just a hole in the ground.", author: "Amanda & Chris W.", location: "Lynnfield, MA" },
+    sections: ["hero", "intro", "features", "included", "benefits", "testimonial", "process", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "pool-patios",
@@ -799,6 +872,16 @@ export const services: ServiceData[] = [
     whyChooseUs: "Pool patios require specific material knowledge and construction techniques that standard patio contractors often overlook. Material must be non-slip when wet, comfortable on bare feet in summer heat, and resistant to chlorine chemical exposure. Drainage must meet code and prevent water from flowing back into the pool. We have built pool surrounds across Wakefield and Greater Boston and understand these requirements. We also coordinate directly with pool contractors — a critical capability that prevents the scheduling conflicts and rework common when homeowners try to manage multiple contractors independently.",
     relatedSlugs: ["paver-patios", "fence", "outdoor-living", "stone-veneer"],
     serviceAreaText: "New England Pavers & Stone installs pool patios and coping for homeowners in Wakefield, Melrose, Stoneham, Reading, Lynnfield, Winchester, Woburn, Burlington, Lexington, Arlington, and communities across Greater Boston. Call (617) 697-3456 for a free pool patio estimate.",
+    layout: "visual",
+    heroStyle: "split-image",
+    heroImage: "/images/services/pool-patios-hero.jpg",
+    sections: ["hero", "intro", "features", "materials", "included", "benefits", "process", "testimonial", "whyUs", "faq", "related", "serviceArea"],
+    materialComparison: [
+      { name: "Textured Pavers", pros: "Excellent slip resistance, many styles, cool-touch options available", cons: "Slightly higher cost, requires polymeric sand upkeep", best_for: "Most pool decks — best balance of safety, durability, and appearance" },
+      { name: "Natural Bluestone", pros: "Premium look, naturally cool underfoot, unique color variation", cons: "Can be slippery when polished, higher cost, requires sealing", best_for: "Upscale pools where aesthetics are the top priority" },
+      { name: "Travertine", pros: "Stays cool in sun, elegant appearance, naturally non-slip", cons: "Softer stone, can etch from pool chemicals, needs resealing", best_for: "Mediterranean or modern pool designs" }
+    ],
+    testimonialQuote: { text: "The pool deck they built stays cool enough to walk on barefoot even in August. Our old concrete was cracking and scorching hot. Night and day difference.", author: "Jennifer K.", location: "Winchester, MA" },
   },
   {
     slug: "stone-veneer",
@@ -846,6 +929,9 @@ export const services: ServiceData[] = [
     whyChooseUs: "Stone veneer installation is detail-oriented masonry work that requires experienced hands. Our masons have been applying natural and manufactured stone veneer across Greater Boston for 17 years. We understand substrate requirements, moisture management, and the artistic eye needed to lay stone in a pattern that looks natural rather than manufactured. When we veneer an outdoor kitchen island or a foundation wall, the result looks like it was built from solid stone. The corners turn cleanly. The joints are consistent. The stone selection varies naturally. These details separate professional veneer work from amateur applications.",
     relatedSlugs: ["outdoor-living", "chimney", "brick", "retaining-walls"],
     serviceAreaText: "New England Pavers & Stone installs stone veneer for homeowners in Wakefield, Melrose, Stoneham, Reading, Winchester, Woburn, Burlington, Lexington, Arlington, Medford, Cambridge, Somerville, and communities across Greater Boston. Call (617) 697-3456 for a free veneer consultation.",
+    layout: "default",
+    testimonialQuote: { text: "The stone veneer on our foundation completely changed the look of our house. Neighbors keep stopping to ask who did the work. Worth every penny.", author: "Lisa & Mark T.", location: "Reading, MA" },
+    sections: ["hero", "intro", "features", "included", "benefits", "testimonial", "process", "whyUs", "faq", "related", "serviceArea"],
   },
   {
     slug: "repair",
@@ -893,5 +979,7 @@ export const services: ServiceData[] = [
     whyChooseUs: "We build hardscapes and we repair hardscapes. That means we see firsthand what causes failures and what prevents them. When we evaluate your repair, we are drawing on 17 years of building experience to diagnose the root cause — not just treat the visible symptom. We are also honest about repair vs replacement. If the original construction was fundamentally flawed, no amount of repair will provide lasting results. We would rather tell you the truth and earn your trust for the right project than take your money for a repair that will fail again in two years.",
     relatedSlugs: ["paver-patios", "retaining-walls", "steps-stairs", "chimney"],
     serviceAreaText: "New England Pavers & Stone provides hardscape and masonry repair services for homeowners in Wakefield, Melrose, Stoneham, Reading, Saugus, Lynnfield, Woburn, Winchester, Burlington, Lexington, Arlington, Medford, Malden, and communities across Greater Boston. Call (617) 697-3456 for a free repair evaluation.",
+    layout: "compact",
+    sections: ["hero", "intro", "features", "process", "faq", "related", "serviceArea"],
   },
 ];
