@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:gap-10 mb-10">
         <div>
           <div className="mb-3">
-            <img src={logo} alt="New England Pavers & Stone" className="w-[200px] h-auto mb-2" />
+            <img src={logo} alt="New England Pavers & Stone" className="w-[500px] h-auto mb-2" />
             <span className="block font-body text-[10px] tracking-[3px] text-off font-normal uppercase">Masonry · Hardscape · Stonework</span>
           </div>
           <div className="text-[13px] text-off leading-relaxed mt-3">
