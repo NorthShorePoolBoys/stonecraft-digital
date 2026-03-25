@@ -1,21 +1,19 @@
 
 
-# Add Background Video to Hero Section
+# Add Background Image to CTA Banner
 
 ## What
-Copy the uploaded MP4 to `public/videos/hero-bg.mp4` and add it as a full-screen background video behind the existing hero section content. No design changes — just layer the video behind the current text and CTAs with a dark overlay for readability.
+Use the uploaded construction photo (`IMG_8087.JPG`) as a background image behind the CTA Banner section, similar to how the hero uses a background video with a dark overlay.
 
 ## Changes
 
-### 1. Copy video file
-Copy `user-uploads://hf_20260325_074938_e935e13d-a0b3-4a87-b2d6-8ac6aafb1a16-2.mp4` → `public/videos/hero-bg.mp4`
+### 1. Copy image to project
+Copy `user-uploads://IMG_8087.JPG` → `public/images/cta-bg.jpg`
 
-### 2. Update `src/pages/Home.tsx` — Hero section only (lines 43-60)
-- Wrap the hero `<section>` with `relative overflow-hidden`
-- Add an absolutely-positioned `<video>` element behind the content:
-  - `autoPlay`, `muted`, `loop`, `playsInline` (for mobile autoplay)
-  - Covers full section with `object-cover`, `absolute inset-0 w-full h-full`
-- Add a dark overlay `<div>` (absolute, `bg-black/60`) between video and text for contrast
-- Make the text content `relative z-10` so it sits above the overlay
-- No other changes to styling, layout, or content
+### 2. Update `src/components/CTABanner.tsx`
+- Add the image as an absolutely-positioned `<img>` element behind the content (same pattern as the hero video)
+- Add `relative overflow-hidden` to the section wrapper
+- Add a colored overlay (`bg-accent/85` or similar) on top of the image to maintain the red/accent background while showing the photo through it
+- Make existing text content `relative z-10` so it sits above the overlay
+- Keep all existing text, links, buttons, and styling unchanged
 
